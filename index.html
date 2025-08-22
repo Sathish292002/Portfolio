@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sathish Software Developer</title>
+  <meta name="theme-color" content="#7c3aed">
+  <!-- Favicon -->
+  <link id="favicon" rel="icon" type="image/png"
+    href="https://res.cloudinary.com/dncyjrbtx/image/upload/v1750729623/search_sdyn1k.png">
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Style css -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- slider -->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Slick JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+  <div class="cursor"></div>
+  <div id="loader" class="spinner">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+
+  <div id="content" style="display: none;">
+    <!-- Navbar section -->
+    <nav class="navbar container-fluid d-none d-md-block fixed-top">
+      <div class="">
+        <div class="row">
+          <div class="logo col-md-2 align-self-center">
+            <span class="highlight"><a href="#home">Sathish</a></span>
+          </div>
+          <div class="col-md-8 align-self-center">
+            <ul class="nav-links">
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#projects">Project</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 align-self-center">
+            <div class="right-icons">
+              <a href="./assets/Sathish_Software_Developer_Resume.pdf" download target="_blank"
+                title="Open Resume in New Tab" class="download-btn">
+                <i class="fa fa-download"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Mobile Navbar (Only shows on small devices) -->
+    <nav class="container-fluid navbar navbar-dark bg-dark fixed-top d-block d-md-none">
+      <div class="d-flex justify-content-between align-items-center">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="#home">
+          <span class="highlight">Sathish</span>
+        </a>
+
+        <!-- Hamburger Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Project</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Resume Button -->
+            <div class="mt-3">
+              <a href="./assets/Sathish_Software_Developer_Resume.pdf" download target="_blank"
+                title="Open Resume in New Tab" class="button-all">
+                <i class="fa fa-download me-2"></i> Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner -->
+    <div id="home" class="banner-section-background pt-5 align-content-center block">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 container2 align-self-center pt-5">
+            <main class="hero">
+              <p class="intro">
+                <span class="emoje-intro">👋</span> Hello, I'm <span class="highlight">Sathish</span>
+              </p>
+              <h1>
+                <span class="">I'm Software</span> <br class="d-block d-md-none">
+                <span class="highlight" id="typewriter"></span><span class="cursor-2"></span>
+              </h1>
+              <p>Experiences skilled in HTML, CSS, JavaScript, React, Next.js, Python, Java, C++, WordPress, PHP, Figma,
+                and
+                MySQL.</p>
+              <div class="d-flex flex-column flex-md-row gap-sm-0 gap-md-5">
+                <div>
+                  <a href="./assets/Sathish_Software_Developer_Resume.pdf" download target="_blank"
+                    title="Open Resume in New Tab" class="mt-3 button-all">Download CV <i
+                      class="fas fa-arrow-right ms-1"></i></a>
+                </div>
+                <div>
+                  <a href="#contact" class="mt-3 button-all">Hiring Me <i class="fas fa-arrow-right ms-1"></i></a>
+                </div>
+              </div>
+            </main>
+
+
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 align-self-center">
+            <spline-viewer url="https://prod.spline.design/K0K7b2CM1JeZ6S-H/scene.splinecode"
+              class="image-3d img-fluid"></spline-viewer>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- section -->
+    <!-- about-section -->
+    <section class="intro-section text-white" id="about">
+      <div class="container block">
+        <div class="row align-items-center">
+          <h2 class="text-center pt-3 pb-3 about-header">About Me</h2>
+          <div class="col-sm-12 col-md-6 text-center text-md-start position-relative">
+            <img src="" alt="Sathish" class="img-fluid rounded" style="max-width: 300px;">
+
+          </div>
+          <div class="col-sm-12 col-md-6 mt-4 mt-md-0 about-me">
+            <div class="badge d-inline-flex align-items-center mb-3 px-3 py-2 border border-light rounded-pill summary">
+              <i class="fas fa-trophy me-2 text-warning"></i>
+              <div>
+                <strong class="highlight">PROFESSIONAL SUMMARY</strong><br>
+              </div>
+            </div>
+            <h2 class="self-taught">Hello! I’m <span class="highlight">Sathish</span>, Software Developer with 1 year of
+              hands-on experience in <span class="text-highlight">HTML</span>, <span class="text-highlight">CSS</span>,
+              <span class="text-highlight">JavaScript</span>, and modern frameworks and libraries like <span
+                class="text-highlight">React JS </span> and <span class="text-highlight">Next JS</span>. Proficient in
+              backend languages such as <span class="text-highlight">Python</span> and <span class="text-highlight">Java
+              </span>, with additional experience in WordPress development. Skilled in building and testing responsive
+              web applications using industry-standard tools and libraries. Passionate about clean code,
+              problem-solving, and continuous learning.
+            </h2>
+
+            <a href="./assets/Sathish_Software_Developer_Resume.pdf" download target="_blank"
+              title="Open Resume in New Tab" class="mt-3 button-all">Download CV <i
+                class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill set -->
+    <section class="container block" id="skills">
+      <div class="row skill-section">
+        <div class="col-sm-12">
+          <h3 class="text-center pt-3 pb-3 about-header">My Skill</h3>
+
+          <div class="tabs-container">
+            <div class="tab-buttons">
+              <button class="active" onclick="showTab(event, 'web')">Frontend</button>
+              <button onclick="showTab(event, 'programming')">Backend</button>
+              <button onclick="showTab(event, 'database')">Databases</button>
+              <button onclick="showTab(event, 'office')">Office Tools</button>
+              <button onclick="showTab(event, 'design')">Design</button>
+            </div>
+
+            <div id="web" class="tab-content active">
+
+              <div class="skills-grid">
+                <div class="skill-card ">
+                  <i class="fab fa-html5"></i>
+                  <h3> HTML</h3>
+                </div>
+
+                <div class="skill-card ">
+                  <i class="fab fa-css3-alt"></i>
+                  <h3>CSS</h3>
+                </div>
+
+                <div class="skill-card ">
+                  <i class="fab fa-js"></i>
+                  <h3> JavaScript</h3>
+                </div>
+
+                <div class="skill-card ">
+                  <i class="fab fa-bootstrap"></i>
+                  <h3> Bootstrap</h3>
+                </div>
+
+                <div class="skill-card ">
+                  <i class="fab fa-react"></i>
+                  <h3> React JS</h3>
+                </div>
+
+                <div class="skill-card ">
+                  <i class="fab fa-nextjs "></i>
+                  <h3> Next JS</h3>
+                </div>
+
+                <div class="skill-card">
+                  <i class="fab fa-react"></i>
+                  <h3>React Bootstrap</h3>
+
+                </div>
+
+                <div class="skill-card">
+                  <i class="fas fa-terminal"></i>
+                  <h3>TypeScript</h3>
+                </div>
+
+
+                <div class="skill-card ">
+                  <i class="fab fa-wordpress "></i>
+                  <h3> WordPress</h3>
+                </div>
+              </div>
+
+
+            </div>
+
+
+            <div id="programming" class="tab-content">
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <i class="fab fa-c"></i>
+                  <h3> C Programming</h3>
+                </div>
+
+                <div class="skill-card">
+                  <i class="fab fa-">C++</i>
+                  <h3> C++</h3>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-java"></i>
+                  <h3>Java</h3>
+
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-python"></i>
+                  <h3>Python</h3>
+
+                </div>
+              </div>
+            </div>
+
+            <div id="database" class="tab-content">
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <i class="fas fa-database" aria-hidden="true"></i>
+
+                  <h3>MySQL</h3>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div id="office" class="tab-content">
+            <div class="skills-grid">
+              <div class="skill-card ">
+                <i class="fas fa-file-word"></i>
+                <h3>Microsoft Word</h3>
+              </div>
+
+              <div class="skill-card">
+                <i class="fas fa-file-excel"></i>
+                <h3>Microsoft Excel</h3>
+              </div>
+
+              <div class="skill-card">
+                <i class="fas fa-file-powerpoint"></i>
+                <h3>Microsoft PowerPoint</h3>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="design" class="tab-content">
+            <ul>
+              <div class="skills-grid">
+                <!-- Figma -->
+                <div class="skill-card">
+                  <i class="fab fa-figma"></i>
+                  <h3>Figma</h3>
+
+                </div>
+
+                <!-- Canva -->
+                <div class="skill-card">
+                  <i class="fas fa-pen-nib"></i>
+                  <h3>Canva</h3>
+
+                </div>
+
+                <!-- GIMP -->
+                <div class="skill-card">
+                  <i class="fas fa-paint-brush"></i>
+                  <h3>GIMP</h3>
+
+                </div>
+              </div>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="d-flex tools-box mb-1 mb-md-5">
+        <div class="p-4 align-items-center">
+          <h3>Tools</h3>
+        </div>
+        <div class="w-100 align-self-center">
+          <marquee width="100%" direction="right" scrollamount="2">
+            <div style="display: flex; align-items: center; gap: 30px;" class="tech-icons">
+              <!-- VS Code -->
+              <img
+                src="https://res.cloudinary.com/dncyjrbtx/image/upload/v1743992561/text%20editors/p3tnymg7l4xkt92se2oj.svg"
+                alt="VS Code" title="Visual Studio Code" width="60">
+
+              <!-- PyCharm -->
+              <img src="https://res.cloudinary.com/dncyjrbtx/image/upload/v1743992576/ides/d8mxw1znsojvn8wrm3hp.svg"
+                alt="PyCharm" title="PyCharm" width="60">
+
+              <!-- IntelliJ IDEA -->
+              <img src="https://res.cloudinary.com/dncyjrbtx/image/upload/v1743992575/ides/b5x6eifq10oucqg0zqqu.svg"
+                alt="IntelliJ IDEA" title="IntelliJ IDEA" width="60">
+
+              <!-- GitHub -->
+              <img src="https://res.cloudinary.com/dncyjrbtx/image/upload/v1743992563/cloud/vbz9zcqof2rnyicrleqk.svg"
+                alt="GitHub" title="GitHub" width="60" style="filter: invert(1);">
+
+              <!-- Postman -->
+              <img src="https://seeklogo.com/images/P/postman-logo-0087CA0D15-seeklogo.com.png" alt="Postman"
+                title="Postman" width="60">
+
+              <!-- React -->
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                title="React" width="60">
+
+              <!-- Vue -->
+              <img
+                src="https://res.cloudinary.com/dncyjrbtx/image/upload/v1743992573/frameworks/djpal559qzokfvsskl8z.svg"
+                alt="Vue.js" title="Vue.js" width="60">
+
+              <!-- Angular -->
+              <img
+                src="https://res.cloudinary.com/dncyjrbtx/image/upload/v1743992567/frameworks/wuvncree5sohakhtjuhm.svg"
+                alt="Angular" title="Angular" width="60">
+
+              <!-- Tailwind CSS -->
+              <img
+                src="https://res.cloudinary.com/dncyjrbtx/image/upload/v1743992584/programming%20languages/pj1a2r4tx3vbe5jybko1.svg"
+                alt="Tailwind CSS" title="Tailwind CSS" width="60">
+
+              <!-- Bootstrap -->
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                alt="Bootstrap" title="Bootstrap" width="60">
+            </div>
+          </marquee>
+        </div>
+      </div>
+
+    </section>
+    <!-- education section -->
+    <section class="container Qualification-section p-1 block " id="education">
+      <div class="row justify-content-center">
+        <h2 class="about-header text-center pt-3 pb-3">Qualification</h2>
+        <!-- Education -->
+        <div class="col-sm-12 col-md-6 col-lg-6 p-1 card-elementer">
+          <div class="p-4 rounded section-box education-box magnetic-box">
+            <h2 class="header-card-h2">Education</h2>
+            <div class="mb-4">
+              <div class="d-block d-md-flex justify-content-between">
+                <div>
+                  <h5 class="header-card-h2"><i class="fas fa-graduation-cap me-2"></i> Dr. M.G.R. Education and Research Institute</h5>
+                </div>
+                <div class="box-small">
+                  <div class="small">2021 – 2024</div>
+                </div>
+              </div>
+              <p class="text-muted">Bachelor of Computer Applications (BCA)</p>
+              <hr>
+            </div>
+            <div>
+              <div class="d-block d-md-flex justify-content-between">
+                <div>
+                  <h5 class="header-card-h2"><i class="fas fa-school me-2"></i> Christ Matriculation & Higher Secondary School</h5>
+                </div>
+                <div class="box-small">
+                  <div class="small">2020 – 2021</div>
+                </div>
+              </div>
+              <p class="text-muted">Higher Secondary Certificate (HSC)</p>
+              <hr>
+            </div>
+            <div>
+              <div class="d-block d-md-flex justify-content-between">
+                <div>
+                  <h5 class="header-card-h2"><i class="fas fa-school me-2"></i> Christ Matriculation & Higher Secondary School</h5>
+                </div>
+                <div class="box-small">
+                  <div class="small">2018 – 2019</div>
+                </div>
+              </div>
+              <p class="text-muted">Senior Secondary (10th)</p>
+              <hr>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experiences -->
+        <div class="col-sm-12 col-md-6 col-lg-6 p-1 card-elementer">
+          <div class="p-4 rounded section-box interests-box">
+            <h2 class="header-card-h2">Experiences</h2>
+            <div class="" aria-hidden="true">
+              <div class="card-body">
+                <div class="mb-4">
+                  <div class="d-block d-md-flex align-items-center justify-content-between">
+                    <div>
+                      <h5 class="header-card-h2"><i class="fas fa-briefcase me-2"></i> Webdads2u</h5>
+                    </div>
+                    <div class="box-small">
+                      <div class="small">2024 – 2025</div>
+                    </div>
+                  </div>
+                  <p class="text-muted">WordPress Developer</p>
+                  <ul>
+                    <li>Developed mobile-optimized websites using HTML, CSS, and JavaScript for cross-device
+                      compatibility.</li>
+                    <li>Built responsive, high-performance UIs with React and Next.js.</li>
+                    <li>Created custom WordPress themes and plugins to enhance functionality and UX.</li>
+                  </ul>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="" aria-hidden="true">
+              <div class="card-body">
+                <h5 class="card-title placeholder-glow">
+                  <span class="placeholder col-6"></span>
+                </h5>
+                <p class="card-text placeholder-glow">
+                <div class="placeholder col-12"></div><br>
+                <div class="placeholder col-4"></div><br>
+                <div class="placeholder col-4"></div><br>
+                <div class="placeholder col-12"></div><br>
+                <div class="placeholder col-8"></div><br>
+                </p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- project -->
+    <section class="container pro-section block" id="projects">
+      <h2 class="text-center pt-3 pb-3 about-header">My Project</h2>
+      <div class="row">
+        <div class="col-sm-12 heroSlider-fixed">
+          <div class="overlay">
+          </div>
+          <!-- Slider -->
+          <div class="slider slider-section responsive-slider">
+            <div>
+              <!-- slider 01 -->
+              <div class="slider-card">
+                <div class="slider-image">
+                  <img src="https://res.cloudinary.com/dncyjrbtx/image/upload/v1749576301/app/virtual-mouse.png" alt="">
+                </div>
+                <div class="slider-contend">
+
+                  <div class="message-box">
+                    <h5 class="text-center">Hand Gesture Controlled Virtual Mouse</h5>
+                    <strong class="heading-helight">Project Description</strong>
+                    <p class="card-para m-0"> Developed a hand-gesture-based virtual mouse system using a camera for
+                      real-time control of clicks, drags, and scrolling.
+                      Built an intuitive GUI with Python’s Tkinter, featuring buttons, labels, and popup dialogs for
+                      alerts and user input.</p>
+                    <p class="m-0"><strong class="heading-helight">Software:</strong> PyCharm Community</p>
+                    <p class="m-0" style="display: flex; align-items: center; gap: 10px;">
+                      <strong class="heading-helight">Languages Used:</strong>
+
+                      <!-- Python Icon -->
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python" title="Python" width="30">
+                    </p>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div>
+              <!-- slider 02 -->
+              <div class="slider-card">
+                <div class="slider-image">
+                  <img src="https://res.cloudinary.com/dncyjrbtx/image/upload/v1750357875/cd_lpx73t.jpg" alt="">
+                </div>
+                <div class="slider-contend">
+
+                  <div class="message-box">
+                    <h5 class="text-center">Personal Portfolio Website</h5>
+                    <strong class="heading-helight">Project Description</strong>
+                    <p class="card-para m-0"> Designed and developed a personal portfolio website using HTML, CSS, and
+                      JavaScript in Visual Studio Code. The website includes sections like About Me, Skills, Projects,
+                      and Contact, with a responsive layout optimized for desktop and mobile devices. The project
+                      highlights clean UI/UX design, semantic HTML, and modular CSS. </p>
+                    <p class="m-0"><strong class="heading-helight">Software:</strong>Visual Studio Code</p>
+                    <p class="m-0 d-flex align-items-center" style="gap: 10px;">
+                      <strong class="heading-helight">Languages Used:</strong>
+
+                      <!-- HTML Icon -->
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
+                        title="HTML" width="15">
+
+                      <!-- CSS Icon -->
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"
+                        title="CSS" width="15">
+
+                      <!-- JavaScript Icon -->
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript" title="JavaScript" width="15">
+                    </p>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+            <div>
+              <!-- slider 03 -->
+              <div class="slider-card" aria-hidden="true">
+                <div class="slider-image">
+                  <img src="https://res.cloudinary.com/dncyjrbtx/image/upload/v1750730392/Untitled_design_fwn39f.png"
+                    class="card-img-top placeholder" alt="...">
+                </div>
+                <div class="slider-contend">
+                  <div class="message-box">
+                    <h5 class="text-center placeholder-glow">
+                      <span class="placeholder col-6"></span>
+                    </h5>
+                    <strong class="heading-helight placeholder-glow">
+                      <span class="placeholder col-4"></span>
+                    </strong>
+                    <p class="card-para m-0 placeholder-glow"></p>
+                    <p class="m-0 placeholder-glow">
+                      <span class="placeholder col-5"></span>
+                    </p>
+                    <p class="m-0 placeholder-glow">
+                      <span class="placeholder col-3"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div>
+              <!-- slider 01 -->
+              <div class="slider-card">
+                <div class="slider-image">
+                  <img src="https://res.cloudinary.com/dncyjrbtx/image/upload/v1749576301/app/virtual-mouse.png" alt="">
+                </div>
+                <div class="slider-contend">
+
+                  <div class="message-box">
+                    <h5 class="text-center">Hand Gesture Controlled Virtual Mouse</h5>
+                    <strong class="heading-helight">Project Description</strong>
+                    <p class="card-para m-0"> Developed a hand-gesture-based virtual mouse system using a camera for
+                      real-time control of clicks, drags, and scrolling.
+                      Built an intuitive GUI with Python’s Tkinter, featuring buttons, labels, and popup dialogs for
+                      alerts and user input.</p>
+                    <p class="m-0"><strong class="heading-helight">Software:</strong> PyCharm Community</p>
+                    <p class="m-0 d-flex align-items-center" style="gap: 10px;">
+                      <strong class="heading-helight">Languages Used:</strong>
+
+                      <!-- Python Icon -->
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python" title="Python" width="30">
+                    </p>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div>
+              <!-- slider 02 -->
+              <div class="slider-card">
+                <div class="slider-image">
+                  <img src="https://res.cloudinary.com/dncyjrbtx/image/upload/v1750357875/cd_lpx73t.jpg" alt="">
+                </div>
+                <div class="slider-contend">
+
+                  <div class="message-box">
+                    <h5 class="text-center">Personal Portfolio Website</h5>
+                    <strong class="heading-helight">Project Description</strong>
+                    <p class="card-para m-0"> Designed and developed a personal portfolio website using HTML, CSS, and
+                      JavaScript in Visual Studio Code. The website includes sections like About Me, Skills, Projects,
+                      and Contact, with a responsive layout optimized for desktop and mobile devices. The project
+                      highlights clean UI/UX design, semantic HTML, and modular CSS. </p>
+                    <p class="m-0"><strong class="heading-helight">Software:</strong>Visual Studio Code</p>
+                    <p class="m-0 d-flex align-items-center" style="gap: 10px;">
+                      <strong class="heading-helight">Languages Used:</strong>
+
+                      <!-- HTML Icon -->
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
+                        title="HTML" width="30">
+
+                      <!-- CSS Icon -->
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"
+                        title="CSS" width="30">
+
+                      <!-- JavaScript Icon -->
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript" title="JavaScript" width="30">
+                    </p>
+
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+            <div>
+              <!-- slider 03 -->
+              <div class="slider-card" aria-hidden="true">
+                <div class="slider-image">
+                  <img src="https://res.cloudinary.com/dncyjrbtx/image/upload/v1750730392/Untitled_design_fwn39f.png"
+                    class="card-img-top placeholder" alt="...">
+                </div>
+                <div class="slider-contend">
+                  <div class="message-box">
+                    <h5 class="text-center placeholder-glow">
+                      <span class="placeholder col-6"></span>
+                    </h5>
+                    <strong class="heading-helight placeholder-glow">
+                      <span class="placeholder col-4"></span>
+                    </strong>
+                    <p class="card-para m-0 placeholder-glow"></p>
+                    <p class="m-0 placeholder-glow">
+                      <span class="placeholder col-5"></span>
+                    </p>
+                    <p class="m-0 placeholder-glow">
+                      <span class="placeholder col-3"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+          <!-- control arrows -->
+          <div class="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          </div>
+          <div class="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+    <section id="contact" class="contact-section">
+      <!-- Popup container -->
+      <div id="popup-message" style="display:none; padding: 10px; margin-top: 15px;" class=""></div>
+      <div class="container">
+        <div class="row shadow rounded  mt-5 mb-5 p-2 p-md-5 bg-from">
+
+          <!-- Left: Contact Info -->
+          <div class="col-sm-12 col-md-5 contact-left d-flex flex-column justify-content-between align-self-center">
+            <div>
+              <h2 class="pt-2 pb-2">Contact Us</h2>
+
+              <p>
+                <i class="fas fa-location-dot me-2"></i>
+                <a href="https://maps.app.goo.gl/rpPE9YTsq6jPyTRM8" target="_blank" class="text-decoration-none">
+                  Padi, Chennai - 600050
+                </a>
+              </p>
+
+              <p>
+                <i class="fas fa-phone me-2"></i>
+                <a href="tel:8807873727" class="text-decoration-none">
+                  8807873727
+                </a>
+              </p>
+
+              <p>
+                <i class="fas fa-envelope me-2"></i>
+                <a href="mailto:sathishs292002@gmail.com" class="text-decoration-none">
+                  sathishs292002@gmail.com
+                </a>
+              </p>
+            </div>
+
+            <img src="https://res.cloudinary.com/dncyjrbtx/image/upload/v1749317762/app/ca6yag7tphn531iipoz4.png"
+              alt="">
+          </div>
+
+
+          <!-- Right: Contact Form -->
+          <div class="col-sm-12 col-md-7 message-from p-3 p-md-3 align-content-center">
+            <h4 class="mb-4">Send Us Your Message</h4>
+
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="921421f6-cd6f-4a66-a1a1-f638ed6d82ab">
+              <div class="row mb-3">
+                <div class="col">
+                  <label class="form-label">First name<span>*</span></label>
+                  <input type="text" class="form-control" name="first_name" placeholder="Write your first name"
+                    required>
+                </div>
+                <div class="col">
+                  <label class="form-label">Last name<span>*</span></label>
+                  <input type="text" class="form-control" name="last_name" placeholder="Write your last name" required>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col">
+                  <label class="form-label">Email address<span>*</span></label>
+                  <input type="email" class="form-control" name="email" placeholder="Write your e-mail address"
+                    required>
+                </div>
+                <div class="col">
+                  <label class="form-label">Phone Number<span>*</span></label>
+                  <input type="number" class="form-control" name="phone" placeholder="Write your Phone Number" required>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Message<span>*</span></label>
+                <textarea class="form-control" name="message" rows="5" placeholder="Write your Message here"
+                  required></textarea>
+                  <small id="message-tooltip" class="tooltip-message">Message must be under 1000 characters.</small>
+              </div>
+
+              <button type="submit" class="button-all">SUBMIT</button>
+            </form>
+
+
+
+            <!-- Popup container -->
+            <div id="popup-message" style="display:none; padding: 10px; margin-top: 15px;" class=""></div>
+
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- footer section -->
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row text-start">
+          <!-- Column 1 -->
+          <div class="col-md-4 mb-3">
+            <h5 class="highlight"><a href="#home">Sathish</a></h5>
+            <p>We are a creative agency offering modern web and design solutions. Let’s build something amazing
+              together.</p>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-md-4 mb-3">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#home" class="text-decoration-none">Home</a></li>
+              <li><a href="#about" class="text-decoration-none">About</a></li>
+              <li><a href="#skills" class="text-decoration-none">Skills</a></li>
+              <li><a href="#education" class="text-decoration-none">Education</a></li>
+              <li><a href="#projects" class="text-decoration-none">Projects</a></li>
+              <li><a href="#contact" class="text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Column 3 -->
+          <div class="col-md-4 mb-3">
+            <h5>Contact</h5>
+            <p class="mb-1">
+              Email:
+              <a href="mailto:sathishs292002@gmail.com" class="text-decoration-none">
+                sathishs292002@gmail.com
+              </a>
+            </p>
+            <p class="mb-1">
+              Phone:
+              <a href="tel:8807873727" class="text-decoration-none">
+                8807873727
+              </a>
+            </p>
+            <p>
+              Location:
+              <a href="https://maps.app.goo.gl/rpPE9YTsq6jPyTRM8" target="_blank" class="text-decoration-none">
+                No.59, Sakthi Street, Periyar 2nd Cross Street, Srinivasa Nagar, Padi, Chennai - 50.
+              </a>
+            </p>
+          </div>
+
+        </div>
+        <hr class="border-light" />
+        <p>&copy; <span id="year"></span> <span class="highlight">Sathish</span>. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- end -->
+    <div class="progress-wrap cursor-pointer active-progress">
+      <svg class="progress-circle" width="100%" height="100%" viewBox="0 0 100 100">
+        <path d="M50,1 a49,49 0 1,1 0,98 a49,49 0 1,1 0,-98" stroke="#7c3aed" stroke-width="2" fill="none" />
+        <path class="progress-path" d="M50,1 a49,49 0 1,1 0,98 a49,49 0 1,1 0,-98" stroke="#fff" stroke-width="3"
+          fill="none" />
+      </svg>
+      <i class="bi bi-arrow-up-short"></i>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- Bootstrap Bundle JS (includes Popper.js needed for offcanvas) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.4/build/spline-viewer.js"></script>
+
+
+</body>
+
+</html>
